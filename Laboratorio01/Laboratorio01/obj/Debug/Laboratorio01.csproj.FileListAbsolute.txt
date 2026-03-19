@@ -1,0 +1,7 @@
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\bin\Debug\Laboratorio01.exe.config
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\bin\Debug\Laboratorio01.exe
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\bin\Debug\Laboratorio01.pdb
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\obj\Debug\Laboratorio01.csproj.AssemblyReference.cache
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\obj\Debug\Laboratorio01.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\obj\Debug\Laboratorio01.exe
+C:\Users\CARLOS18\source\repos\Laboratorio01\Laboratorio01\obj\Debug\Laboratorio01.pdb
