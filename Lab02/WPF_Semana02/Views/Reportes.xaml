@@ -1,0 +1,22 @@
+<Window x:Class="WPF_Semana02.Views.Reportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Reportes" Height="500" Width="700">
+    <Grid Background="White">
+        <Border Background="#FF8800" Height="60" VerticalAlignment="Top" CornerRadius="0,0,20,20">
+            <TextBlock Text="Reportes" Foreground="White" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <TabControl Margin="20,80,20,60">
+            <TabItem Header="Cargas">
+                <DataGrid x:Name="dgCargas" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Ingresos">
+                <DataGrid x:Name="dgIngresos" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Salidas">
+                <DataGrid x:Name="dgSalidas" AutoGenerateColumns="True"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="Volver" Background="White" Foreground="#FF8800" BorderBrush="#FF8800" BorderThickness="2" Height="35" Margin="20,0,20,20" VerticalAlignment="Bottom" Click="BtnVolver_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_Semana02.Views.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Semana02.Views"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid Background="White">
+        <Border Background="#FF8800" Height="70" VerticalAlignment="Top" CornerRadius="0,0,20,20">
+            <TextBlock Text="Menú Principal" Foreground="White" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <StackPanel Margin="40,100,40,40" Background="White" VerticalAlignment="Top">
+            <Button Content="Ingresos" Click="BtnIngresos_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Conductores" Click="BtnConductores_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Lista Conductores" Click="BtnListaConductores_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Transportistas" Click="BtnTransportistas_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Camiones" Click="BtnCamiones_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Productos" Click="BtnProductos_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+            <Button Content="Reportes" Click="BtnReportes_Click" Background="#FF8800" Foreground="White" Height="40" FontSize="16"/>
+        </StackPanel>
+    </Grid>
+</Window>

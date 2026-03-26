@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_Semana02.Views.ListaConductores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Semana02.Views"
+        mc:Ignorable="d"
+        Title="ListaConductores" Height="450" Width="800">
+    <Grid Background="White">
+        <Border Background="#FF8800" Height="60" VerticalAlignment="Top" CornerRadius="0,0,20,20">
+            <TextBlock Text="Lista de Conductores" Foreground="White" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <DataGrid x:Name="dgConductores" Margin="40,80,40,40" AutoGenerateColumns="False" HeadersVisibility="Column" RowBackground="White" AlternatingRowBackground="#FFF3E0" GridLinesVisibility="None">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre Conductor" Binding="{Binding Nombre}"/>
+                <DataGridTextColumn Header="Licencia" Binding="{Binding Licencia}"/>
+                <DataGridTextColumn Header="Transporte" Binding="{Binding Transporte}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

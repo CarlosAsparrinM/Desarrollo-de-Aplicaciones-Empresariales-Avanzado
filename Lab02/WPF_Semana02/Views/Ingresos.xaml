@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPF_Semana02.Views.Ingresos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Semana02.Views"
+        mc:Ignorable="d"
+        Title="Ingresos" Height="450" Width="800">
+    <Grid Background="White">
+        <Border Background="#FF8800" Height="60" VerticalAlignment="Top" CornerRadius="0,0,20,20">
+            <TextBlock Text="Registro de Ingresos" Foreground="White" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <StackPanel Margin="40,80,40,40" Background="White" VerticalAlignment="Top">
+            <Label Content="Tipo Documento" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtTipoDoc" Height="30"/>
+            <Label Content="Número Documento" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtNumeroDoc" Height="30"/>
+            <Label Content="Placa" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtPlaca" Height="30"/>
+            <Label Content="Turno" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtTurno" Height="30"/>
+            <Label Content="Nombre Conductor" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtConductor" Height="30"/>
+            <Label Content="Nombre Cliente" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtCliente" Height="30"/>
+            <Label Content="Fecha y Hora" Foreground="#FF8800" FontWeight="Bold"/>
+            <DatePicker x:Name="dpFecha" Height="30"/>
+            <Label Content="Peso de Ingreso" Foreground="#FF8800" FontWeight="Bold"/>
+            <TextBox x:Name="txtPeso" Height="30"/>
+            <Button Content="Guardar" Background="#FF8800" Foreground="White" Height="35" Margin="0,20,0,0" Click="BtnGuardar_Click"/>
+            <Button Content="Volver" Background="White" Foreground="#FF8800" BorderBrush="#FF8800" BorderThickness="2" Height="35" Margin="0,10,0,0" Click="BtnVolver_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
