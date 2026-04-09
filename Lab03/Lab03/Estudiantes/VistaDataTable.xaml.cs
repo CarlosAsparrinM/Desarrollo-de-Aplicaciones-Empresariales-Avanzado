@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Lab03
+{
+    /// <summary>
+    /// Lógica de interacción para VistaDataTable.xaml
+    /// </summary>
+    public partial class VistaDataTable : Window
+    {
+        EstudianteDAO dao = new EstudianteDAO();
+
+        public VistaDataTable()
+        {
+            InitializeComponent();
+            dgEstudiantes.ItemsSource = dao.ObtenerTodos().DefaultView;
+        }
+
+        private void Volver_Click(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().Show();
+            this.Close();
+        }
+    }
+}

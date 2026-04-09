@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab03.Productos.VistaProductosDataTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab03.Productos"
+        mc:Ignorable="d"
+        Title="VistaProductosDataTable" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Name="dgProductos" Margin="10"/>
+
+        <Button Content="Volver al menú"
+                Grid.Row="1"
+                Height="35"
+                Margin="10"
+                Click="Volver_Click"/>
+    </Grid>
+
+</Window>

@@ -1,0 +1,86 @@
+﻿<Window x:Class="Lab03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border Background="White" CornerRadius="15" Padding="20" Margin="20">
+            <StackPanel>
+
+                <!-- TÍTULO -->
+                <TextBlock Text="Sistema de Gestión"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="#333"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <!-- SECCIÓN ESTUDIANTES -->
+                <TextBlock Text="Estudiantes"
+                           FontSize="16"
+                           FontWeight="SemiBold"
+                           Foreground="#555"
+                           Margin="0,10,0,5"/>
+
+                <Button Content="📊 Ver Estudiantes (DataTable)"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#4CAF50"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnDataTable_Click"/>
+
+                <Button Content="📋 Listar Estudiantes (DataReader)"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#2196F3"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnDataReader_Click"/>
+
+                <Button Content="🔍 Buscar Estudiantes"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#FF9800"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnFiltro_Click"/>
+
+                <!-- SECCIÓN PRODUCTOS -->
+                <TextBlock Text="Productos"
+                           FontSize="16"
+                           FontWeight="SemiBold"
+                           Foreground="#555"
+                           Margin="15,20,0,5"/>
+
+                <Button Content="📦 Productos (DataTable)"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#9C27B0"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnP1_Click"/>
+
+                <Button Content="📃 Productos (DataReader)"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#3F51B5"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnP2_Click"/>
+
+                <Button Content="💰 Filtro por Precio"
+                        Height="40"
+                        Margin="0,5"
+                        Background="#E91E63"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        Click="BtnP3_Click"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
